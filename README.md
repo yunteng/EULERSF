@@ -1,11 +1,12 @@
 ============================================
 #Introduction
-This is EULERSF, a two-way coupled simulation between a single phase fluid and deformable solids. It implements the method described in the following paper:
+This code conducts a two-way coupled simulation between a single phase fluid and deformable solids. It implements the method described in the following paper:
 
 Eulerian Solid-Fluid Coupling.
-Yun Teng, David I.W. Levin, and Theodore Kim. SIGGRAPH Asia 2016
 
-The 3D rubber ball example from the paper has been provided in this code
+Yun Teng, David I.W. Levin, and Theodore Kim. SIGGRAPH Asia 2016.
+
+The 3D rubber ball example from the paper has been provided in this code.
 ![alt tag](renders/highres.png)
 
 
@@ -16,14 +17,17 @@ The only external dependencies not included in this release are libpng and zlib,
 The Eigen (http://eigen.tuxfamily.org/) library is used for the linear algebra routines. We did a slight modification in Eigen/src/SparseCore/SparseUtil.h: the following three lines were added in the Triplet class:
 
 Index& row() { return m_row; }
+
 Index& col() { return m_col; }
+
 Scalar& value() { return m_value; }
 
 Other third party libraries include:
-  dtgrid(https://code.google.com/p/dt-grid/), for generating as well as looking up narrow-banded signed distance field (SDF).
-  deformCD(http://gamma.cs.unc.edu/DEFORMCD/), for BVH triangle-triangle collision.
-  glvu(http://www.cs.unc.edu/~walk/software/glvu/), for OpenGL navigation, etc.
-    All calls to GLVU are restricted to include/util/VIEWER.h and include/util/VIEWER.inl so you can easily swap to your own favoriate OpenGL navigator.
+  [dtgrid](https://code.google.com/p/dt-grid/), for generating as well as looking up narrow-banded signed distance field (SDF).
+
+  [deformCD](http://gamma.cs.unc.edu/DEFORMCD/), for BVH triangle-triangle collision.
+
+  [glvu](http://www.cs.unc.edu/~walk/software/glvu/), for OpenGL navigation, etc. All calls to GLVU are restricted to include/util/VIEWER.h and include/util/VIEWER.inl so you can easily swap to your own favoriate OpenGL navigator.
 
 ============================================
 #Compiling the code
