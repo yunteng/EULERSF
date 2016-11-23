@@ -24,9 +24,9 @@ Scalar& value() { return m_value; }
 
 Other third party libraries include:
 
-⋅⋅⋅[dtgrid](https://code.google.com/p/dt-grid/), for generating as well as looking up narrow-banded signed distance field (SDF).
-⋅⋅⋅[deformCD](http://gamma.cs.unc.edu/DEFORMCD/), for BVH triangle-triangle collision.
-⋅⋅⋅[glvu](http://www.cs.unc.edu/~walk/software/glvu/), for OpenGL navigation, etc. All calls to GLVU are restricted to include/util/VIEWER.h and include/util/VIEWER.inl so you can easily swap to your own favoriate OpenGL navigator.
+...[dtgrid](https://code.google.com/p/dt-grid/), for generating as well as looking up narrow-banded signed distance field (SDF).
+...[deformCD](http://gamma.cs.unc.edu/DEFORMCD/), for BVH triangle-triangle collision.
+...[glvu](http://www.cs.unc.edu/~walk/software/glvu/), for OpenGL navigation, etc. All calls to GLVU are restricted to include/util/VIEWER.h and include/util/VIEWER.inl so you can easily swap to your own favoriate OpenGL navigator.
 
 ============================================
 #Compiling the code
