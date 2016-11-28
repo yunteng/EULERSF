@@ -50,6 +50,6 @@ This rasterizes a solid's mass on to a grid using the solid's signed distance fi
 
 ./bin/rubberBall ./cfg/ball.lowres.cfg
 
-This is a lowres simulation of a rubber ball falling onto a carpet of fluid. 250 frames will be computed. The result video is at renders/rubberball_lowres.mov
+This is a lowres simulation of a rubber ball falling onto a carpet of fluid. 250 frames will be computed. The result video is at renders/rubberball_lowres.mov. Press 'a' to start/stop simulating the next frame. Press 's' to toggle simulating one frame at a time or keep going. The UI will delay respond until the current frame has been computed.
 
 A highres configuration is provided in cfg/ball.highres.cfg We recommend compiling the code with openmp before running the highres version. The result video is at renders/rubberball_highres.mov

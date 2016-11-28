@@ -249,10 +249,10 @@ template <class T>
 T* VIEWER<T>::simulator = NULL;
 
 template <class T>
-bool VIEWER<T>::animate = false;
+bool VIEWER<T>::animate = true; // Start the simulation?
 
 template <class T>
-bool VIEWER<T>::step = true;
+bool VIEWER<T>::step = false; // Compute one frame at a time or keep going?
 
 template <class T>
 bool VIEWER<T>::showGrid = true;
